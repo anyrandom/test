@@ -181,7 +181,7 @@ if prompt:
     conversation.append({"role": "user", "content": prompt})
 
     thinking_msg = st.empty()
-    thinking_msg.text("Thinking...")
+    thinking_msg.text("Brewing...")
 
     completion = openai.ChatCompletion.create(
         engine="gpt-35-turbo",
