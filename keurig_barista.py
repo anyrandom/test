@@ -19,6 +19,60 @@ openai.api_base = "https://testaisvc.openai.azure.com/"
 openai.api_version = "2023-03-15-preview"
 openai.api_key = "1164d7a0490a41b9b6ec3a32d4c77b5a"
 
+st.markdown(
+    """
+    <style>
+    .reportview-container ,.appview-container,.stChatFloatingInputContainer{
+        background-color: #EDEEF2;
+    }
+    .embeddedAppMetaInfoBar_container__DxxL1{background-color: #fff !important;height:100px!impotant}
+   .stChatMessage{background-color:none; padding:0px 10px;}
+   .stChatMessage [data-testid="chatAvatarIcon-user"]{display:none;}
+   .stChatMessage [data-testid="chatAvatarIcon-user"] ~ div{margin-left:80px;}
+   .stChatMessage .stMarkdown{background-color:#fff;
+   padding:10px 10px ; font-size:14px; color:#212120;
+   border-radius:8px}
+   .stChatMessage [data-testid="chatAvatarIcon-user"] ~ div .stMarkdown{background:#ECE3FE !important;}
+   .stChatMessage [data-testid="chatAvatarIcon-assistant"] ~ div .stMarkdown {background:#fff !important;}
+   .stChatMessage [data-testid="chatAvatarIcon-assistant"],.stChatMessage img{width:40px; height:40px; border-radius:50%;}
+   .stMarkdown .stMarkdownContainer{ background-color:#fff;
+   padding:10px 10px ; font-size:14px; color:#212120;
+   border-radius:8px} 
+   .stChatFloatingInputContainer{padding-bottom:20px;}
+   .stChatInputContainer{ background-color:#fff; color:#212120; }
+   .stChatInputContainer textarea{color:#212120 !important;padding-left:10px !important;
+     background-image: url("https://images.app.goo.gl/LFCobouKtT7oZ7Qv7") }
+   .stChatInputContainer .st-bw{border:1px solid #C5C5C5 !important;}
+   .stChatInputContainer .st-bw textarea{border:0px !important;}
+   .stChatInputContainer button:hover{background:none !important;color:#212120;}
+   .stChatInputContainer button svg{transform: rotate(-30deg);color:#212120;top: -3px;
+position: relative;}
+   
+   .stChatInputContainer textarea::-webkit-input-placeholder {
+            color:#212120;
+        }
+    .stChatInputContainer textarea:-moz-placeholder {
+             color:#212120;
+        }
+      .stChatInputContainer textarea::-moz-placeholder {
+             color:#212120;
+        }
+     
+       .stChatInputContainer textarea:-ms-input-placeholder {
+             color:#212120;
+        }
+     
+       .stChatInputContainer textarea::placeholder {
+             color:#212120;
+        }   
+   .sidebar .sidebar-content {
+        background: #fff
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
 conversation = [
 
     {"role": "system", "content": "You are a Keurig AI assistant built to help people find coffee or tea or dessert recipes from the brand "
