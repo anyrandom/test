@@ -204,12 +204,7 @@ conversation = [
                                      "However, you can check the weather forecast on your local news website or a weather app on your phone."}
 
 
-
-
 ]
-
-#Header text
-#st.markdown('<h1 style="text-align:center; margin-top: 5px;">Welcome To Keurig Virtual Personal Barista</h1>', unsafe_allow_html=True)
 
 if "messages" not in st.session_state.keys():
     st.session_state.messages = [{"role": "assistant", "content": "How may I help you? To get started, "
@@ -219,7 +214,7 @@ if "messages" not in st.session_state.keys():
 
 for message in st.session_state.messages:
     if message["role"] == "assistant":
-        with st.chat_message(message["role"]): #, avatar=k_small_logo):
+        with st.chat_message(message["role"], avatar=k_small_logo):
             st.write(message["content"])
     else:
         with st.chat_message(message["role"]):
@@ -250,7 +245,7 @@ if prompt:
     chat_response = completion.choices[0].message.content
 
     thinking_msg.empty()
-    with st.chat_message("Assistant"): #, avatar=k_small_logo):
+    with st.chat_message("Assistant", avatar=k_small_logo):
         st.write(chat_response)
 
     message = {"role": "assistant", "content": chat_response}
