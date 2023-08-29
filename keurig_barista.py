@@ -39,8 +39,8 @@ st.markdown(
    .stMarkdown .stMarkdownContainer{ background-color:#fff;
    padding:10px 10px ; font-size:14px; color:#212120;
    border-radius:8px}
-   section[data-testid="stSidebar"] .css-ng1t4o {{width: 25rem;}}
-   section[data-testid="stSidebar"] .css-1d391kg {{width: 25rem;}}
+   section[data-testid="stSidebar"] .css-ng1t4o {{width: 40rem;}}
+   section[data-testid="stSidebar"] .css-1d391kg {{width: 40rem;}}
    .stChatFloatingInputContainer{padding-bottom:20px;}
    .stChatInputContainer{ background-color:#fff; color:#212120; }
    .stChatInputContainer textarea{color:#212120 !important;padding-left:10px !important;
