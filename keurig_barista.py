@@ -7,9 +7,10 @@ from PIL import Image
 k_small_logo = Image.open("keurig_small_logo.png")
 k_logo = Image.open("keurig_logo.png")
 barista_logo = Image.open("barista-chat-icon.png")
+barista_large = Image.open("barista_large.png")
 
 st.set_page_config(page_title="Keurig Barista", page_icon=k_small_logo, initial_sidebar_state="auto", layout="centered")
-st.sidebar.image(barista_logo)
+st.sidebar.image(barista_large)
 st.sidebar.title("Welcome To Keurig Virtual Personal Barista")
 # st.sidebar.divider()
 st.sidebar.subheader("Let me help you find the perfect beverage!")
