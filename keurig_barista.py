@@ -7,7 +7,9 @@ from PIL import Image
 k_small_logo = Image.open("keurig_small_logo.png")
 k_logo = Image.open("keurig_logo.png")
 barista_logo = Image.open("barista-chat-icon.png")
-barista_large = Image.open("barista_large.png")
+
+raw_sidebar_image = Image.open("barista_large.png")
+barista_large = raw_sidebar_image.resize((220,330))
 
 st.set_page_config(page_title="Keurig Barista", page_icon=k_small_logo, initial_sidebar_state="auto", layout="centered")
 st.sidebar.image(barista_large)
@@ -24,6 +26,14 @@ openai.api_key = "1164d7a0490a41b9b6ec3a32d4c77b5a"
 st.markdown(
     """
     <style>
+    section[data-testid="stSidebar"] {width: 550px !important;}
+    [data-testid=stSidebar] [data-testid=stImage]{
+            text-align: center;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 100%;
+        }
     .reportview-container ,.appview-container,.stChatFloatingInputContainer{
         background-color: #EDEEF2;
     }
