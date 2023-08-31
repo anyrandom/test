@@ -11,11 +11,11 @@ barista_logo = Image.open("barista-chat-icon.png")
 raw_sidebar_image = Image.open("barista_large.png")
 barista_large = raw_sidebar_image.resize((220,330))
 
-st.set_page_config(page_title="Keurig Barista", page_icon=k_small_logo, initial_sidebar_state="auto", layout="centered")
+st.set_page_config(page_title="Keurig Barista", page_icon=k_small_logo, initial_sidebar_state="auto", layout="wide")
 st.sidebar.image(barista_large)
-st.sidebar.title("Welcome To Keurig Virtual Personal Barista")
+st.sidebar.title("Welcome To Keurig Virtual Personal Barista \n Let me help you find the perfect beverage!")
 # st.sidebar.divider()
-st.sidebar.subheader("Let me help you find the perfect beverage!")
+#st.sidebar.subheader("Let me help you find the perfect beverage!")
 # #mood_option = st.sidebar.selectbox('How are you feeling today?',('Happy', 'Tired', 'Gloomy', 'Sick'))
 
 openai.api_type = "azure"
