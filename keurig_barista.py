@@ -18,10 +18,10 @@ st.sidebar.title("Welcome To Keurig Virtual Personal Barista \n Let me help you 
 #st.sidebar.subheader("Let me help you find the perfect beverage!")
 # #mood_option = st.sidebar.selectbox('How are you feeling today?',('Happy', 'Tired', 'Gloomy', 'Sick'))
 
-openai.api_type = "azure"
-openai.api_base = "https://testaisvc.openai.azure.com/"
-openai.api_version = "2023-03-15-preview"
-openai.api_key = "1164d7a0490a41b9b6ec3a32d4c77b5a"
+openai.api_type = st.secrets["TYPE"]
+openai.api_base = st.secrets["BASE"]
+openai.api_version = st.secrets["VERSION"]
+openai.api_key = st.secrets["KEY"]
 
 st.markdown(
     """
